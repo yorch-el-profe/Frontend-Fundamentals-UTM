@@ -1,0 +1,23 @@
+.caja {
+ /* Diseño de la caja */
+ width: 100px;
+ height: 100px;
+ border: 1px solid black;
+ margin: 10px;
+ background-color: black;
+
+ display: inline-block;
+}
+
+#super-caja {
+  text-align: center;
+}
+
+#caja-izquierda {
+  float: left;
+}
+
+#caja-derecha {
+  float: right;
+}
+
