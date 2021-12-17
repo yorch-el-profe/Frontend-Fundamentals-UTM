@@ -29,33 +29,13 @@ header > #small-text > small {
 }
 
 header > #email-input {
-  display: flex;
-  justify-content: center;
   margin-top: 35px;
-}
-
-header > #email-input > input {
-  font-size: 15px;
-  padding: 18px;
-  border: 1px solid #d7d9dc;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-right: none;
-}
-
-header > #email-input > input::placeholder {
-  color: #a4aab0;
+  justify-content: center;
 }
 
 header > #email-input > button {
   padding-left: 30px;
   padding-right: 30px;
-  border: 1px solid #1b6456;
-  background-color: #1b6456;
-  color: white;
-  font-size: 15px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 header > img {
