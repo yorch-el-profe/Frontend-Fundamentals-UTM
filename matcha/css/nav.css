@@ -1,22 +1,8 @@
-/*
-  selector {
-    propiedad: valor;
-    propiedad2: valor2;
-  }
-*/
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto Slab', serif;
-}
-
 nav {
-  text-align: center;
   height: 70px;
   background-color: #fffbf7;
-  padding-left: 50px;
-  padding-right: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav img {
@@ -24,22 +10,9 @@ nav img {
   height: 55px;
 }
 
-/*
-  Selecciona los divs directos que están dentro
-  de la etiqueta nav
-*/
-nav > div {
-  display: inline-block;
-}
-
 nav > #logo {
-  float: left;
-  margin-top: 5px;
-}
-
-nav > #logo > * {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 
 nav > #logo > h1 {
@@ -50,24 +23,29 @@ nav > #logo > h1 {
   font-family: 'Fira Sans', sans-serif;
 }
 
+nav > #menu {
+  width: 30%;
+}
+
 nav > #menu > ul  {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 nav > #menu > ul > li {
-  display: inline-block;
-  margin-left: 30px;
   font-size: 16px;
   color: #1b6456;
   font-weight: 600;
 }
 
 nav > #sign-in {
-  float: right;
-  margin-top: 12px;
+  display: flex;
+  align-items: center;
 }
 
 nav > #sign-in > a {
@@ -85,6 +63,6 @@ nav > #sign-in button {
   border-radius: 5px;
   padding: 12px;
   font-weight: 600;
-  margin-left: 10px;
   font-family: 'Roboto Slab', serif;
+  margin-left: 10px;
 }

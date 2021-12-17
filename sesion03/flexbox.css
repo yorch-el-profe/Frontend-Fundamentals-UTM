@@ -1,0 +1,41 @@
+body {
+  margin: 20px;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  background-color: black;  
+ }
+
+ .caja-arriba {
+  align-self: flex-start;
+ }
+
+ .caja-abajo {
+  align-self: flex-end;
+ }
+
+ .contenedor {
+   width: 100%;
+   height: 650px;
+   border: 4px dashed #222;
+
+   display: flex;
+   /*
+    Si flex-direction es row entonces:
+      * justify-content es horizontal
+      * align-items es vertical
+
+    Si flex-direction es column entonces:
+      * justify-content es vertical
+      * align-items es horizontal
+   */
+   justify-content: space-between;
+   align-items: center;
+ }
