@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 
 #video > video {
-  width: 480;
-  height: 270;
+  width: 480px;
+  height: 270px;
 }
 
 #video > #video-text {
@@ -46,4 +47,25 @@
 
 #video > #video-text > #publish-input > .matcha-input > input {
   width: 150px;
+}
+
+/* Dispositivos grandes (Desktop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #video > #video-text {
+    width: 40%;
+  }
+}
+
+/* Dispositivos pequeños (Movil horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  #video > #video-text {
+    width: 80%;
+  }
+}
+
+/* Dispositivos muy pequeños (relojes, moviles, etc) */
+@media (max-width: 575px) {
+  #video > #video-text {
+    min-width: 480px;
+  }
 }

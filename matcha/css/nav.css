@@ -66,3 +66,39 @@ nav > #sign-in button {
   font-family: 'Roboto Slab', serif;
   margin-left: 10px;
 }
+
+/* Dispositivos grandes (Desktop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  nav > #menu {
+    width: 40%;
+  }
+}
+
+/* Dispositivos medianos (Movil horizontal y Tablet) */
+@media (min-width: 576px) and (max-width: 991px) {
+  nav > #menu {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Dispositivos muy pequeños (relojes, moviles, etc) */
+@media (max-width: 575px) {
+  nav > #menu {
+    display: none;
+  }
+
+  nav > #sign-in {
+    display: none;
+  }
+
+  nav {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+}
