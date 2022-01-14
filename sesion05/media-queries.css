@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  background-color: black;
+}
+
+/*
+  @media (breakpoint) {
+  }
+
+  breakpoint
+  Puede ser un tamaño en especifico
+  width: 1000px
+  height: 200px
+
+  1. Mayor que X px de ancho
+  min-width: Xpx
+
+  Aplicar un estilo a una pantalla apartir de los 1000px
+  @media (min-width: 1000px) {
+  }
+
+  2. Menor que X px de ancho
+  max-width: Xpx
+
+  Aplicar un estilo a una pantalla de a lo más 1000px
+  @media (max-width: 1000px) {
+  }
+
+  3. Rangos de tamaños
+
+  Aplicar un estilo a una pantalla entre los 200px y 1000px
+  @media (min-width: 200px) and (max-width: 1000px) {
+  }
+*/
+
+@media (min-width: 1000px) {
+  .caja {
+    width: 800px;
+    height: 800px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .caja {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+  }
+}
+
+/*
+  Tamaños estandard (sugerencia)
+*/
+/* Dispositivos extra grandes */
+@media (min-width: 1200px) {
+}
+
+/* Dispositivos grandes (Desktop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Dispositivos medianos (Tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Dispositivos pequeños (Movil horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Dispositivos muy pequeños (relojes, moviles, etc) */
+@media (max-width: 575px) {
+}

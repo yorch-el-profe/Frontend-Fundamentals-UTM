@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  background-color: black;  
+ }
+
+ .contenedor {
+   /*
+    vw -> viewport width (el ancho del navegador)
+    vh -> viewport height (el alto del navegador)
+   */
+  width: 100vw;
+  height: 100vh;
+
+   display: grid;
+   grid-template-columns: 200px 200px;
+   grid-template-rows: 200px 200px;
+
+   /* Respecto al espacio sobrante de la celda */
+   justify-items: center;
+   align-items: center;
+
+   /* Respecto al espacio sobrante del grid */
+   justify-content: center;
+   align-content: center;
+ }
