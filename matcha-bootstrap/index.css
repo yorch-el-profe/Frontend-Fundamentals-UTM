@@ -1,0 +1,51 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar {
+  background-color: #fffbf7;
+}
+
+.navbar-brand span {
+  color: #1b6456;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.navbar-signin a {
+  text-decoration: none;
+  color: #67b54b;
+  font-weight: 700;
+}
+
+.btn-success {
+  background-color: #67b54b;
+  border-color: #67b54b;
+}
+
+header {
+  text-align: center;
+  background-color: #fffbf7;
+}
+
+header > h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 65px;
+  color: #1b6456;
+}
+
+header > p {
+  color: #8a8c8d;
+}
+
+header > #small-text {
+  color: #a4a3a2;
+  font-weight: 600;
+}
+
+header > #small-text > small {
+  display: block;
+}
+
+header > img {
+  width: 80%;
+}

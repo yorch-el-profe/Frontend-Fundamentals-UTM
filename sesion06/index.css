@@ -1,0 +1,24 @@
+.row > div {
+  border: 1px solid black;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: black;
+ }
+
+ .d-flex {
+   margin-top: 50px;
+ }
+
+ .btn-primary {
+   background-color: #4527a0;
+   border-color: #4527a0;
+ }
