@@ -1,0 +1,26 @@
+.caja {
+  width: 200px;
+  height: 200px;
+}
+.caja label {
+  font-size: 30px;
+}
+.caja section {
+  border: 1px solid #1100ff;
+}
+.caja section article {
+  background-color: #555;
+}
+
+.otra-caja p {
+  color: #1100ff;
+}
+
+nav {
+  background-color: #1100ff;
+}
+nav .logo {
+  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Ftentulogo.com%2Fhistoria-del-logo-de-coca-cola%2F&psig=AOvVaw3MpnNxCFCIFjbl_8PamdHB&ust=1643248981975000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjO9NCpzvUCFQAAAAAdAAAAABAD");
+}
+
+/*# sourceMappingURL=index.css.map */

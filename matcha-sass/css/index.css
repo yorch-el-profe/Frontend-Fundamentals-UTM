@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.matcha-input {
+  display: flex;
+}
+
+.matcha-input > input {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: none;
+  padding: 18px;
+  border: 1px solid #d7d9dc;
+  font-size: 15px;
+}
+
+.matcha-input > input::placeholder {
+  color: #a4aab0;
+}
+
+.matcha-input > button {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid #1b6456;
+  background-color: #1b6456;
+  color: white;
+  font-size: 15px;
+}

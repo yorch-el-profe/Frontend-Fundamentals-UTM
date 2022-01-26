@@ -1,0 +1,9 @@
+@use "variables" as v;
+
+nav {
+  background-color: v.$color-principal;
+
+  .logo {
+    background: url(v.$logo);
+  }
+}

@@ -1,0 +1,104 @@
+nav {
+  height: 70px;
+  background-color: #fffbf7;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav img {
+  width: 55px;
+  height: 55px;
+}
+
+nav > #logo {
+  display: flex;
+  align-items: center;
+}
+
+nav > #logo > h1 {
+  font-size: 35px;
+  margin: 0;
+  color: #1b6456;
+  margin-left: 10px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+nav > #menu {
+  width: 30%;
+}
+
+nav > #menu > ul  {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav > #menu > ul > li {
+  font-size: 16px;
+  color: #1b6456;
+  font-weight: 600;
+}
+
+nav > #sign-in {
+  display: flex;
+  align-items: center;
+}
+
+nav > #sign-in > a {
+  color: #67b54b;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav > #sign-in button {
+  font-size: 16px;
+  color: white;
+  background-color: #67b54b;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 10px;
+}
+
+/* Dispositivos grandes (Desktop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  nav > #menu {
+    width: 40%;
+  }
+}
+
+/* Dispositivos medianos (Movil horizontal y Tablet) */
+@media (min-width: 576px) and (max-width: 991px) {
+  nav > #menu {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Dispositivos muy pequeños (relojes, moviles, etc) */
+@media (max-width: 575px) {
+  nav > #menu {
+    display: none;
+  }
+
+  nav > #sign-in {
+    display: none;
+  }
+
+  nav {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+}

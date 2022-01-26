@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+.caja {
+  width: $ancho-caja;
+  height: $altura-caja;
+
+  label {
+    font-size: $fuente-grande;
+  }
+
+  section {
+    border: 1px solid $color-principal;
+
+    article {
+      background-color: #555;
+    }
+  }
+}
+
+.otra-caja {
+   p {
+     color: $color-principal;
+   }
+}

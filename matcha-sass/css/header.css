@@ -1,0 +1,44 @@
+header {
+  text-align: center;
+  background-color: #fffbf7;
+  padding-top: 70px;
+}
+
+header > h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 65px;
+  color: #1b6456;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+header > p {
+  font-size: 20px;
+  color: #8a8c8d;
+}
+
+header > #small-text {
+  text-align: center;
+  color: #a4a3a2;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+header > #small-text > small {
+  display: block;
+}
+
+header > #email-input {
+  margin-top: 35px;
+  justify-content: center;
+}
+
+header > #email-input > button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+header > img {
+  width: 80%;
+  margin-top: 70px;
+}

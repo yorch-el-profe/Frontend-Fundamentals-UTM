@@ -1,0 +1,71 @@
+#video {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+#video > video {
+  width: 480px;
+  height: 270px;
+}
+
+#video > #video-text {
+  width: 50%;
+}
+
+#video > #video-text > h3 {
+  color: #1b6456;
+  font-size: 40px;
+  font-family: 'Abril Fatface', cursive;
+  margin: 0;
+}
+
+#video > #video-text > p {
+  color: #8a8c8d;
+  margin: 0;
+}
+
+#video > #video-text > p:nth-child(2) {
+  margin-top: 15px;
+}
+
+#video > #video-text > #publish-input {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#video > #video-text > #publish-input > label {
+  color: #1b6456;
+}
+
+#video > #video-text > #publish-input > .matcha-input {
+  margin-left: 20px;
+}
+
+#video > #video-text > #publish-input > .matcha-input > input {
+  width: 150px;
+}
+
+/* Dispositivos grandes (Desktop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #video > #video-text {
+    width: 40%;
+  }
+}
+
+/* Dispositivos pequeños (Movil horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  #video > #video-text {
+    width: 80%;
+  }
+}
+
+/* Dispositivos muy pequeños (relojes, moviles, etc) */
+@media (max-width: 575px) {
+  #video > #video-text {
+    min-width: 480px;
+  }
+}
