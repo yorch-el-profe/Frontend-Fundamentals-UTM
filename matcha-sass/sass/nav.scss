@@ -1,0 +1,104 @@
+@use "variables" as *;
+
+nav {
+  height: 70px;
+  background-color: $color-fondo;
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    width: 55px;
+    height: 55px;
+  }
+
+  & > #logo {
+    display: flex;
+    align-items: center;
+
+    & > h1 {
+      font-size: 35px;
+      margin: 0;
+      color: $verde-feo;
+      margin-left: 10px;
+      font-family: $fuente-fira;
+    }
+  }
+
+  & > #menu {
+    width: 30%;
+
+    & > ul  {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      & > li {
+        font-size: 16px;
+        color: $verde-feo;
+        font-weight: 600;
+      }
+    }
+  }
+
+  & > #sign-in {
+    display: flex;
+    align-items: center;
+
+    & > a {
+      color: $verde-bonito;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    button {
+      font-size: 16px;
+      color: $blanco;
+      background-color: $verde-bonito;
+      border: none;
+      border-radius: 5px;
+      padding: 12px;
+      font-weight: 600;
+      font-family: $fuente-roboto;
+      margin-left: 10px;
+    }
+    
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  nav > #menu {
+    width: 40%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  nav {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    & > #menu {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  nav {
+    justify-content: flex-start;
+    padding-left: 20px;
+
+    & > #menu {
+      display: none;
+    }
+
+    & > #sign-in {
+      display: none;
+    }
+  }
+}
